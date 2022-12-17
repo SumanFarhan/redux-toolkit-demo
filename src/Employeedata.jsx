@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { addUser } from './Redux/Reduceremployee'
 
 const Employeedata = () => {
@@ -22,6 +23,7 @@ const Employeedata = () => {
       <label >Age:</label>
       <input type="number" onChange={(event) => { setage(event.target.value) }} /><br /><br />
       <button onClick={() => { dispatch(addUser({ fname, lname, email, age })) }}>Add Employee</button>
+      <Link to="/example">Example</Link>
 
       <div>
       <table>

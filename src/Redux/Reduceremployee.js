@@ -13,6 +13,6 @@ export const employeeSlice = createSlice({
         },
     }
 })
-export const {addUser}=employeeSlice.actions
+export const { addUser } = employeeSlice.actions
 export default employeeSlice.reducer
 
